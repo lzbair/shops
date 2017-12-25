@@ -1,6 +1,6 @@
-package com.hiddenfounders.recrutement.shop.client;
+package com.hiddenfounders.recrutement.shop.morphia;
 
-import com.hiddenfounders.recrutement.shop.model.Shop;
+import com.hiddenfounders.recrutement.shop.morphia.model.Shop;
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
 import org.mongodb.morphia.Datastore;
@@ -9,7 +9,7 @@ import org.mongodb.morphia.query.Query;
 
 import java.util.List;
 
-public class Mongo {
+public class playGround {
 
 
     public static void main(String... args) {

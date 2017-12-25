@@ -1,4 +1,4 @@
-package com.hiddenfounders.recrutement.shop.model;
+package com.hiddenfounders.recrutement.shop.morphia.model;
 
 import org.mongodb.morphia.annotations.Entity;
 import org.mongodb.morphia.annotations.Id;
