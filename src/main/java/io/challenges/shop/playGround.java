@@ -1,8 +1,8 @@
-package com.hiddenfounders.recrutement.shop;
+package io.challenges.shop;
 
-import com.hiddenfounders.recrutement.shop.config.MongoConfig;
-import com.hiddenfounders.recrutement.shop.model.Shop;
-import com.hiddenfounders.recrutement.shop.repository.ShopRepository;
+import io.challenges.shop.config.MongoConfig;
+import io.challenges.shop.model.Shop;
+import io.challenges.shop.repository.ShopRepository;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

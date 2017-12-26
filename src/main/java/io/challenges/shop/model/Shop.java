@@ -1,4 +1,4 @@
-package com.hiddenfounders.recrutement.shop.model;
+package io.challenges.shop.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

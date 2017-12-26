@@ -1,7 +1,7 @@
-package com.hiddenfounders.recrutement.shop.config;
+package io.challenges.shop.config;
 
-import com.hiddenfounders.recrutement.shop.repository.ShopRepository;
-import com.hiddenfounders.recrutement.shop.service.ShopService;
+import io.challenges.shop.repository.ShopRepository;
+import io.challenges.shop.service.ShopService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,9 +1,9 @@
-package com.hiddenfounders.recrutement.shop;
+package io.challenges.shop;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 
-@SpringBootApplication(scanBasePackages = "com.hiddenfounders.recrutement.shop.config")
+@SpringBootApplication(scanBasePackages = "io.challenges.shop.config")
 public class ShopApplication {
 
     public static void main(String... args){

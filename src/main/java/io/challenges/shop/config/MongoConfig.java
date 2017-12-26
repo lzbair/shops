@@ -1,4 +1,4 @@
-package com.hiddenfounders.recrutement.shop.config;
+package io.challenges.shop.config;
 
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
@@ -8,7 +8,7 @@ import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 @Configuration
-@EnableMongoRepositories(basePackages = "com.hiddenfounders.recrutement.shop.repository")
+@EnableMongoRepositories(basePackages = "io.challenges.shop.repository")
 public class MongoConfig {
 
     @Bean

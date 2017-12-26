@@ -1,6 +1,6 @@
-package com.hiddenfounders.recrutement.shop.repository;
+package io.challenges.shop.repository;
 
-import com.hiddenfounders.recrutement.shop.model.Shop;
+import io.challenges.shop.model.Shop;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

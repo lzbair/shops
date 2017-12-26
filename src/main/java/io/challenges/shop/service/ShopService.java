@@ -1,7 +1,7 @@
-package com.hiddenfounders.recrutement.shop.service;
+package io.challenges.shop.service;
 
-import com.hiddenfounders.recrutement.shop.model.Shop;
-import com.hiddenfounders.recrutement.shop.repository.ShopRepository;
+import io.challenges.shop.model.Shop;
+import io.challenges.shop.repository.ShopRepository;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
