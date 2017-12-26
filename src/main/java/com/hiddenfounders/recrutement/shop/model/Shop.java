@@ -1,9 +1,9 @@
-package com.hiddenfounders.recrutement.shop.morphia.model;
+package com.hiddenfounders.recrutement.shop.model;
 
-import org.mongodb.morphia.annotations.Entity;
-import org.mongodb.morphia.annotations.Id;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-@Entity("shops")
+@Document(collection = "shops")
 public class Shop {
 
     @Id

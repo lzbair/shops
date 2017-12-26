@@ -1,6 +1,6 @@
-package com.hiddenfounders.recrutement.shop.spring.repository;
+package com.hiddenfounders.recrutement.shop.repository;
 
-import com.hiddenfounders.recrutement.shop.spring.model.Shop;
+import com.hiddenfounders.recrutement.shop.model.Shop;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
