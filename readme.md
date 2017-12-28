@@ -1,5 +1,6 @@
 # Project Title
 Shops
+Full specifications [here]: (https://github.com/hiddenfounders/web-coding-challenge/blob/master/README.md)
 
 ## Getting Started
 
@@ -16,7 +17,7 @@ Mongo DB 3.6.0
 Install a Mongo db instance (127.0.0.1:9005)  
 A mongo dump file is provided: [here](https://github.com/hiddenfounders/web-coding-challenge/blob/master/dump-shops.zip)
 
-> mongodb --dbpath /mongo/dbs  --port 9005             (server)  
+> mongod --dbpath /mongo/dbs  --port 9005             (server)  
 > mongorestore  --db shops  --port 9005  /dump         (create db from dump)  
 > mongo 127.0.0.1:9005/shops                           (standalone test connection)  
 

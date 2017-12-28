@@ -1,15 +1,14 @@
 package io.challenges.shop.service;
 
-import io.challenges.shop.model.Shop;
 import io.challenges.shop.repository.ShopRepository;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
-
 @RestController
+@RequestMapping(path = "/api")
 public class ShopService {
 
 
@@ -20,12 +19,12 @@ public class ShopService {
     }
 
     @RequestMapping(path = "/shop/all", method = RequestMethod.GET)
-    public List<Shop> all() {
-        return repository.findAll();
+    public ResponseEntity all() {
+        return ResponseEntity.ok(repository.findAll());
     }
 
     @RequestMapping(path = "/shop/{id}", method = RequestMethod.GET)
-    public Shop byId(@PathVariable String id) {
-        return repository.findOne(id);
+    public ResponseEntity byId(@PathVariable String id) {
+        return ResponseEntity.ok(repository.findOne(id));
     }
 }
