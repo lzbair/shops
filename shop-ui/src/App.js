@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Shop from './Shop';
 import './App.css';
-const network = require('./network.js');
 
 class App extends Component {
 
@@ -11,16 +10,15 @@ class App extends Component {
   	}
 
   componentDidMount() {
-		network({method: 'GET', path: 'http://localhost:9000/api/shop/all'}).done(response => {
-			this.setState({shops: response.entity});
-		});
+    fetch('/api/shop/all').then(response => response.json())
+                          .then(shops => this.setState({ shops }));
 	}
   render() {
     return (
     <div>
     <h1 className="App-title">Available Shops</h1>
         {this.state.shops.map(function(value)
-          { return <Shop obj={value}/>; })}
+          { return <Shop  key={value.id} obj={value}/>; })}
     </div>
     );
   }

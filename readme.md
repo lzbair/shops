@@ -14,7 +14,7 @@ Mongo DB 3.6.0
 
 
 ### Installing
-Install a Mongo db instance (127.0.0.1:9005)  
+Install a Mongo db instance (check here to customize config:  src\main\resources\application.properties)  
 A mongo dump file is provided: [here](https://github.com/hiddenfounders/web-coding-challenge/blob/master/dump-shops.zip)
 
 > mongod --dbpath /mongo/dbs  --port 9005             (server)  
@@ -25,5 +25,9 @@ A mongo dump file is provided: [here](https://github.com/hiddenfounders/web-codi
 > mvn clean package  
 > java -jar target\shops-1.0-SNAPSHOT.jar  
 
+### API
 > curl http://127.0.0.1:9000/shop/all  
 > curl http://127.0.0.1:9000/shop/5a0c6bd5fd3eb67969316df7  
+
+### UI
+http://127.0.0.1:9000/ui/index.html
