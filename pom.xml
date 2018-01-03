@@ -41,11 +41,11 @@
                 <version>1.3.2</version>
                 <executions>
                     <execution>
-                        <id>npm install (initialize)</id>
+                        <id>npm install</id>
                         <goals>
                             <goal>exec</goal>
                         </goals>
-                        <phase>initialize</phase>
+                        <phase>generate-resources</phase>
                         <configuration>
                             <executable>npm</executable>
                             <arguments>
@@ -55,11 +55,11 @@
                         </configuration>
                     </execution>
                     <execution>
-                        <id>npm run build (compile)</id>
+                        <id>npm run build</id>
                         <goals>
                             <goal>exec</goal>
                         </goals>
-                        <phase>compile</phase>
+                        <phase>process-resources</phase>
                         <configuration>
                             <executable>npm</executable>
                             <arguments>
@@ -73,4 +73,37 @@
             </plugin>
         </plugins>
     </build>
+
+    <profiles>
+        <profile>
+            <id>database</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.googlecode.maven-download-plugin</groupId>
+                        <artifactId>download-maven-plugin</artifactId>
+                        <version>1.4.0</version>
+                        <executions>
+                            <execution>
+                                <id>download dump</id>
+                                <phase>process-resources</phase>
+                                <goals>
+                                    <goal>wget</goal>
+                                </goals>
+                                <configuration>
+                                    <url>
+                                        https://github.com/hiddenfounders/web-coding-challenge/raw/master/dump-shops.zip
+                                    </url>
+                                    <unpack>true</unpack>
+                                    <outputDirectory>${basedir}/data/</outputDirectory>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+
 </project>
